@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { appRouter } from "./appRouter";
 import '../shared/main.css'
+import '../i18n'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>

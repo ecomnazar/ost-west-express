@@ -8,7 +8,7 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 
 export const Section: React.FC<Props> = ({ className, children }) => {
     return (
-        <section className={clsx('py-16', className)}>
+        <section className={clsx('py-8 sm:py-16', className)}>
             {children}
         </section>
     )
