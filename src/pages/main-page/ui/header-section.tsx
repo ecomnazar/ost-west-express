@@ -25,8 +25,8 @@ export const HeaderSection = () => {
                     </ul>
                 </nav>
                 <div className='my-12 sm:my-40'>
-                    <h1 className="text-4xl sm:text-8xl mb-6">Строим макеты<br />железных дорог<br />вместе</h1>
-                    <p className='text-lg max-w-[400px]'>Клуб любителей железнодорожного моделизма</p>
+                    <h1 className="text-4xl sm:text-8xl mb-6 max-w-[800px]">{t('weMakeLayout')}</h1>
+                    <p className='text-lg max-w-[400px]'>{t('weMakeLayoutDesc')}</p>
                 </div>
             </Container>
         </header>
