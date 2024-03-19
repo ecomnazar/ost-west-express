@@ -44,10 +44,10 @@ export const JoinUsSection = () => {
       <Container>
         <div className='flex items-end justify-between mb-6'>
           <h2 className="text-3xl sm:text-6xl sm:mb-12 text-left md:text-right" dangerouslySetInnerHTML={{ __html: t('joinUs') }} />
-          <p className='hidden md:block'>men strelka</p>
+          {/* <p className='hidden md:block'>men strelka</p> */}
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-10'>
-          <div className='bg-gray-300 h-[500px]'></div>
+          <div className='bg-gray-300 h-[300px] md:h-[400px] sm:h-[500px]'></div>
           <form onSubmit={handleSubmit} className='space-y-4'>
             <input className='p-6 bg-gray-300 placeholder:text-black/70 w-full outline-none' name='fullname' placeholder='Введите имя и фамилию' />
             <input className='p-6 bg-gray-300 placeholder:text-black/70 w-full outline-none' name='mail' placeholder='Введите электронную почту' />

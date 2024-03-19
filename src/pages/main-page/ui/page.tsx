@@ -6,6 +6,7 @@ import { HeaderSection } from './header-section'
 import { JoinUsSection } from './join-us-section'
 import { useTranslation } from 'react-i18next'
 import { Toaster } from 'react-hot-toast'
+import { Footer } from './footer'
 
 export const MainPage = () => {
     const { i18n: { changeLanguage } } = useTranslation()
@@ -23,6 +24,7 @@ export const MainPage = () => {
             <AboutCourseSection />
             <AchievementSection />
             <JoinUsSection />
+            <Footer />
         </>
     )
 }

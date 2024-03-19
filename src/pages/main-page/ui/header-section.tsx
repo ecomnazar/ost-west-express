@@ -24,7 +24,7 @@ export const HeaderSection = () => {
                         <li onClick={() => handleChangeLanguage('ge')} className='cursor-pointer'>GE</li>
                     </ul>
                 </nav>
-                <div className='my-12 sm:my-40'>
+                <div className='my-12 sm:mt-40'>
                     <h1 className="text-4xl sm:text-8xl mb-6 max-w-[800px]">{t('weMakeLayout')}</h1>
                     <p className='text-lg max-w-[400px]'>{t('weMakeLayoutDesc')}</p>
                 </div>
