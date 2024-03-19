@@ -10,6 +10,7 @@ import { Toaster } from 'react-hot-toast'
 export const MainPage = () => {
     const { i18n: { changeLanguage } } = useTranslation()
     const languageLS = localStorage.getItem('i18n')
+
     React.useEffect(() => {
         languageLS && changeLanguage(languageLS)
     }, [])

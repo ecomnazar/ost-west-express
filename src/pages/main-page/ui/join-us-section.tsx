@@ -1,31 +1,14 @@
+import toast from 'react-hot-toast';
+import { sendToEmail } from '@/shared/lib/sendToEmail';
+import { sendToTelegram } from '@/shared/lib/sendToTelegram';
 import { Container } from '@/shared/ui/container'
 import { Section } from '@/shared/ui/section'
-import axios from 'axios';
-import toast from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
 
-interface FormProps<T> {
+export interface FormProps<T> {
   fullname: T;
   mail: T;
   level: T;
-}
-
-const sendToTelegram = async (data: FormProps<string>) => {
-  const { fullname, mail, level } = data
-  const TOKEN = import.meta.env.VITE_TOKEN
-  const CHAT_ID = import.meta.env.VITE_CHAT_ID
-  const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
-
-  let message = `<b>OW Express</b>\n`;
-  message += `<b>Fullname: </b>${fullname}\n`;
-  message += `<b>Mail: </b>${mail}\n`;
-  message += `<b>Level: </b>${level}\n`;
-
-  await axios.post(URI_API, {
-    chat_id: CHAT_ID,
-    parse_mode: 'html',
-    text: message
-  })
 }
 
 export const JoinUsSection = () => {
@@ -37,17 +20,23 @@ export const JoinUsSection = () => {
     const fullname = target.fullname.value
     const mail = target.mail.value
     const level = target.mail.value
-    const data = {
-      fullname,
-      mail,
-      level
+
+    let message = `<b>OW Express:</b>\n`;
+    message += `<b>Fullname: </b>${fullname}\n`;
+    message += `<b>Mail: </b>${mail}\n`;
+    message += `<b>Level: </b>${level}\n`;
+
+    const emailDetails = {
+      subject: 'Mail from website',
+      message,
+      to_email: 'ecomnazar.me@gmail.com'
     }
-    toast.promise(sendToTelegram({ fullname, mail, level }), {
+
+    toast.promise(Promise.all([sendToTelegram(message), sendToEmail(emailDetails)]), {
       loading: 'Loading',
       success: 'Success',
       error: 'Error'
     })
-    console.log(data);
   }
 
   return (
