@@ -15,6 +15,14 @@
         "main": "Nach oben",
         "forWhoCourseFooter": "Wer kann mitwirken",
         "application": "Antrag",
-        "addressInfo": "Industriestrasse 8 Raum 2.6-2.10 79206 Breisach Deutschland"
+        "addressInfo": "Industriestrasse 8 Raum 2.6-2.10 79206 Breisach Deutschland",
+        "ourProjectsAndAchievements": "Unsere Projekte und Impressionen",
+        "sendApplication": "Nachricht absenden",
+        "nameAndLastname": "Name, Vorname",
+        "emailAddress": "Email-Adresse",
+        "eduLevel": "Nachricht absenden",
+        "school": "Schüler",
+        "teeneger": "Jugendliche",
+        "old": "Erfahrene Modellbahner"
     }
 }

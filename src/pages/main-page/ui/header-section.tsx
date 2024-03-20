@@ -15,9 +15,9 @@ export const HeaderSection = () => {
                 <nav className='flex items-center justify-between py-4'>
                     <img src='/images/logo.jpeg' className='w-16 sm:w-28' />
                     <ul className='hidden sm:flex items-center space-x-12'>
-                        <li className='cursor-pointer'>{t('aboutUs')}</li>
-                        <li className='cursor-pointer'>{t('whatWillLearn')}</li>
-                        <li className='cursor-pointer'>{t('contacts')}</li>
+                        <li className='cursor-pointer'><a href='#aboutUs'>{t('aboutUs')}</a></li>
+                        <li className='cursor-pointer'><a href='#whatWillLearn'>{t('whatWillLearn')}</a></li>
+                        <li className='cursor-pointer'><a href='#footer'>{t('contacts')}</a></li>
                     </ul>
                     <ul className='flex items-center space-x-6'>
                         <li onClick={() => handleChangeLanguage('ru')} className='cursor-pointer'>RU</li>

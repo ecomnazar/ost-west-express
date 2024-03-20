@@ -6,9 +6,9 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
     children: React.ReactNode
 }
 
-export const Section: React.FC<Props> = ({ className, children }) => {
+export const Section: React.FC<Props> = ({ className, children, ...props }) => {
     return (
-        <section className={clsx('py-8 sm:py-16', className)}>
+        <section {...props} className={clsx('py-8 sm:py-16', className)}>
             {children}
         </section>
     )
