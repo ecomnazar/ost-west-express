@@ -3,7 +3,10 @@ import { sendToEmail } from '@/shared/lib/sendToEmail';
 import { sendToTelegram } from '@/shared/lib/sendToTelegram';
 import { Container } from '@/shared/ui/container'
 import { Section } from '@/shared/ui/section'
+import { IoIosArrowUp } from "react-icons/io";
 import { useTranslation } from 'react-i18next';
+import React from 'react';
+import clsx from 'clsx';
 
 export interface FormProps<T> {
   fullname: T;
@@ -11,15 +14,18 @@ export interface FormProps<T> {
   level: T;
 }
 
+const levels = ['beginner', 'experienced', 'advanced']
+
 export const JoinUsSection = () => {
   const { t } = useTranslation()
+  const [level, setLevel] = React.useState('')
+  const [isOpen, setIsOpen] = React.useState(false)
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault()
     const target = e.target as typeof e.target & FormProps<{ value: string }>
     const fullname = target.fullname.value
     const mail = target.mail.value
-    const level = target.mail.value
 
     let message = `<b>OW Express:</b>\n`;
     message += `<b>Fullname: </b>${fullname}\n`;
@@ -53,7 +59,23 @@ export const JoinUsSection = () => {
           <form onSubmit={handleSubmit} className='space-y-4'>
             <input className='p-6 bg-gray-300 placeholder:text-black/70 w-full outline-none' name='fullname' placeholder={t('nameAndLastname')} />
             <input className='p-6 bg-gray-300 placeholder:text-black/70 w-full outline-none' name='mail' placeholder={t('emailAddress')} />
-            <input className='p-6 bg-gray-300 placeholder:text-black/70 w-full outline-none' placeholder={t('eduLevel')} />
+            <div className='relative'>
+              <button onClick={() => setIsOpen((prev) => !prev)} type='button' className='p-6 bg-gray-300 w-full text-left'>{level ? level : t('eduLevel')}</button>
+              <div className={clsx('absolute right-6 top-1/2 -translate-y-1/2', {
+                '': isOpen,
+                'rotate-180': !isOpen
+              })}><IoIosArrowUp /></div>
+            </div>
+            {isOpen &&
+              <div>
+                {levels.map((item) => {
+                  return <button key={item} onClick={() => {
+                    setLevel(t(item))
+                    setIsOpen(false)
+                  }} type='button' className='p-6 bg-gray-300 w-full text-left hover:bg-black hover:text-gray-300'>{t(item)} </button>
+                })}
+              </div>
+            }
             <button className='p-6 bg-black text-white w-full'>{t('sendApplication')}</button>
           </form>
         </div>

@@ -14,7 +14,7 @@ export const AboutCourseSection = () => {
                     {forWho.map((item, idx) => {
                         return <div key={idx} className="relative bg-gray-300 h-[500px]">
                             <img src={`/images/about-course-section/${idx + 1}.jpg`} className="object-cover object-center w-full h-full" alt="" />
-                            <p className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white text-[19px] w-full text-center">{t(item)}</p>
+                            {/* <p className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white text-[19px] w-full text-center">{t(item)}</p> */}
                         </div>
                     })}
                 </div>

@@ -20,9 +20,12 @@
         "sendApplication": "Nachricht absenden",
         "nameAndLastname": "Name, Vorname",
         "emailAddress": "Email-Adresse",
-        "eduLevel": "Nachricht absenden",
+        "eduLevel": "Vorkenntnisse",
         "school": "Schüler",
         "teeneger": "Jugendliche",
-        "old": "Erfahrene Modellbahner"
+        "old": "Erfahrene Modellbahner",
+        "beginner": "Anfänger",
+        "experienced": "Erfahrener",
+        "advanced": "Fortgeschirittener"
     }
 }

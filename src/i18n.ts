@@ -8,5 +8,5 @@ i18n.use(initReactI18next).init({
     ge: { ...geJson },
     ru: { ...ruJson },
   }, // Where we're gonna put translations' files
-  lng: "ge", // Set the initial language of the App
+  lng: "ge",
 });

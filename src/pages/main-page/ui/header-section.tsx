@@ -21,7 +21,7 @@ export const HeaderSection = () => {
                     </ul>
                     <ul className='flex items-center space-x-6'>
                         <li onClick={() => handleChangeLanguage('ru')} className='cursor-pointer'>RU</li>
-                        <li onClick={() => handleChangeLanguage('ge')} className='cursor-pointer'>GE</li>
+                        <li onClick={() => handleChangeLanguage('ge')} className='cursor-pointer'>DE</li>
                     </ul>
                 </nav>
                 <div className='my-12 sm:mt-40'>

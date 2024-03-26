@@ -20,9 +20,12 @@
         "sendApplication": "Подать заявку",
         "nameAndLastname": "Введите имя и фамилию",
         "emailAddress": "Введите электронную почту",
-        "eduLevel": "Укажите уровень знаний",
+        "eduLevel": "Уровень знаний",
         "school": "Школьники",
         "teeneger": "Молодёжь",
-        "old": "Зрелые"
+        "old": "Зрелые",
+        "beginner": "Начинающий",
+        "experienced": "Опытный",
+        "advanced": "Продвинутый"
     }
 }
