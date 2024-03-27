@@ -30,6 +30,7 @@ export const MainPage = () => {
             <Footer />
             <section className='py-16'>
                 <Container>
+                    <h2 className="text-3xl sm:text-6xl mb-6 sm:mb-12 max-w-[500px]">{t('partners')}</h2>
                     <h1 className='text-[#A42820] font-bold text-[104px]'>PIKO</h1>
                     <p className='text-[22px]'>{t('piko')}</p>
                 </Container>
