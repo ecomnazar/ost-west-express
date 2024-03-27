@@ -26,6 +26,19 @@
         "old": "Erfahrene Modellbahner",
         "beginner": "Anfänger",
         "experienced": "Erfahrener",
-        "advanced": "Fortgeschirittener"
+        "advanced": "Fortgeschirittener",
+        "dioramTitle": "Dioramen",
+        "dioramDesc": "Das ist der kleinste funktionsfähige Element. Mehrere Dioramen können in eine Bahnlinie verbunden werden. Das sorgt für mehr Spielspaß, da die Züge durch mehrere Bahnhöfe fahren.",
+        "moduleTemplateTitle": "Separate rechteckige",
+        "moduleTemplateDesc": "Sektionen mit ca. 55 x 120 cm. Können in beliebiger Anzahl miteinander verbunden werden, dabei eröffnen sich uneingeschränkte Gestaltungsmöglichkeiten.",
+        "clubTemplateTitle": "Clubanlage \"Schienenverkehr Ost- West\"",
+        "clubTemplateDesc": "Eine große stationäre Clubanlage, die nach modularem Prinzip ausgebaut wird.",
+        "eventTitle": "Veranstaltungen",
+        "eventDesc": "Workshops für Dioramenbau, Modellbahnelektrotechnik, Zugsteuerung und natürlich Tage der offenen Türen und Ausstellungen!",
+        "piko": "Piko ist ein eingetragenes Warenzeichen der Piko Spielwaren GmbH, Lutherstr. 30, 96515 Sonneberg, Germany",
+        "statistics1": "abgeschlossene Anlagen und Dioramen",
+        "statistics2": "internationale Ausstellungen",
+        "statistics3": "eigene Modellbahn- Veranstaltungen",
+        "statistics4": "erfolgreich ausgebildete Schüle"
     }
 }

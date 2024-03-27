@@ -13,7 +13,7 @@ export const HeaderSection = () => {
         <header>
             <Container>
                 <nav className='flex items-center justify-between py-4'>
-                    <img src='/images/logo.jpeg' className='w-16 sm:w-28' />
+                    <img src='/images/logo.jpg' className='w-24 sm:w-36' />
                     <ul className='hidden sm:flex items-center space-x-12'>
                         <li className='cursor-pointer'><a href='#aboutUs'>{t('aboutUs')}</a></li>
                         <li className='cursor-pointer'><a href='#whatWillLearn'>{t('whatWillLearn')}</a></li>
